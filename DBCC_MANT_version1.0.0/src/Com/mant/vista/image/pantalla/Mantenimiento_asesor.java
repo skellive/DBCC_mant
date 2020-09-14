@@ -349,11 +349,11 @@ public class Mantenimiento_asesor extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextKilovalidacion
 
     private void txtChaMotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtChaMotActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtChaMotActionPerformed
 
     private void txtKilMotvalidacion(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtKilMotvalidacion
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtKilMotvalidacion
 
     private void txtCalMotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCalMotActionPerformed
