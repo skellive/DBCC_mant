@@ -6,6 +6,7 @@
 package Com.mant.conexion_excel;
 
 import Com.mant.CRUD.conexion.conexion;
+import Com.mant.singleton.ClaseLogSingleton;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -32,7 +33,7 @@ public class excel {
             Connection conn = con.getConexion();
             PreparedStatement ps;
             FileInputStream file = new FileInputStream(new File(ruta));
-
+               ClaseLogSingleton.getMiLogSingleton();
             XSSFWorkbook wb = new XSSFWorkbook(file);
             XSSFSheet sheet = wb.getSheetAt(0);
 

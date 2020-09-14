@@ -1,6 +1,8 @@
 
 package Com.mant.controladorVO;
 
+import Com.mant.singleton.ClaseLogSingleton;
+
 
 public class Calculo_mantenimiento_autoVO {
     
@@ -13,7 +15,7 @@ public class Calculo_mantenimiento_autoVO {
     private Integer Kilometraje;
     private Integer Valor_total;
     private String Resultado;
-
+    
     public String getCHASIS() {
         return CHASIS;
     }
