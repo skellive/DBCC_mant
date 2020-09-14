@@ -31,17 +31,15 @@ public class Principal2 extends javax.swing.JFrame {
         if (mod.getId_tipo() == 1 || mod.getId_tipo() == 3) {
             btCalculoMant.setVisible(true);
             btnUser.setVisible(true);
-            btnRegMotos.setVisible(true);
-            btnRegCarroceria.setVisible(true);
+            
             btnabrArchiv.setVisible(true);
-            btnRegAutos.setVisible(true);
+            
         } else if (mod.getId_tipo() == 2 || mod.getId_tipo() == 4) {
             btCalculoMant.setVisible(false);
             btnUser.setVisible(false);
-            btnRegMotos.setVisible(false);
-            btnRegCarroceria.setVisible(false);
+            
             btnabrArchiv.setVisible(false);
-            btnRegAutos.setVisible(false);
+            
         }
     }
 
@@ -71,15 +69,11 @@ public class Principal2 extends javax.swing.JFrame {
         btCalculoMant_asesor = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        btnRegMotos = new javax.swing.JButton();
-        btnRegCarroceria = new javax.swing.JButton();
-        btnRegMotor = new javax.swing.JButton();
         btnabrArchiv = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        btnRegAutos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -218,20 +212,6 @@ public class Principal2 extends javax.swing.JFrame {
 
         jButton1.setText("Registro general vehiculo");
 
-        btnRegMotos.setText("Registro motos");
-        btnRegMotos.setEnabled(false);
-        btnRegMotos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegMotosActionPerformed(evt);
-            }
-        });
-
-        btnRegCarroceria.setText("Registro por carroceria");
-        btnRegCarroceria.setEnabled(false);
-
-        btnRegMotor.setText("Registro por motor");
-        btnRegMotor.setEnabled(false);
-
         btnabrArchiv.setText("Abrir archivos");
         btnabrArchiv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -247,9 +227,6 @@ public class Principal2 extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Com/man/vista/image/02d44a138596fdf4ae697bf05eaa6285.gif"))); // NOI18N
 
-        btnRegAutos.setText("Registro autos");
-        btnRegAutos.setEnabled(false);
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -263,21 +240,15 @@ public class Principal2 extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(358, 358, 358)
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                     .addGap(27, 27, 27)
                                     .addComponent(jLabel5)
                                     .addGap(48, 48, 48)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(btnRegMotos, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnRegCarroceria, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnabrArchiv, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnRegMotor, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(btnabrArchiv, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                     .addGap(30, 30, 30)
-                                    .addComponent(jLabel6)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnRegAutos, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(jLabel6)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel4)))
@@ -288,25 +259,15 @@ public class Principal2 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(7, 7, 7)
-                            .addComponent(btnRegMotos, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnRegCarroceria, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(btnabrArchiv, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(btnRegMotor, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                            .addGap(159, 159, 159)
+                            .addComponent(btnabrArchiv, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(btnRegAutos, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel6)
                         .addGap(10, 10, 10)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -335,7 +296,7 @@ public class Principal2 extends javax.swing.JFrame {
         Login log = new Login();
         this.dispose();
         log.setVisible(true);
-
+ 
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btRegistroGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRegistroGeneralActionPerformed
@@ -372,10 +333,6 @@ public class Principal2 extends javax.swing.JFrame {
         cambioContraseña chpass = new cambioContraseña();
         chpass.setVisible(true);
     }//GEN-LAST:event_btCambiPassActionPerformed
-
-    private void btnRegMotosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegMotosActionPerformed
-
-    }//GEN-LAST:event_btnRegMotosActionPerformed
 
     private void btnabrArchivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnabrArchivActionPerformed
         abrirArchivos ab = new abrirArchivos();
@@ -429,10 +386,6 @@ public class Principal2 extends javax.swing.JFrame {
     private javax.swing.JButton btHmoe;
     private javax.swing.JButton btRegistroGeneral;
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton btnRegAutos;
-    private javax.swing.JButton btnRegCarroceria;
-    private javax.swing.JButton btnRegMotor;
-    private javax.swing.JButton btnRegMotos;
     private javax.swing.JButton btnUser;
     public javax.swing.JButton btnabrArchiv;
     private javax.swing.JButton jButton1;

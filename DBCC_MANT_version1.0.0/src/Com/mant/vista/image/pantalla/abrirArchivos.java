@@ -47,6 +47,7 @@ public class abrirArchivos extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         btnConAuto = new javax.swing.JButton();
         btnConMotos = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         regresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,11 +66,14 @@ public class abrirArchivos extends javax.swing.JFrame {
         });
 
         abrir2.setText("Por carroceria de motos");
+        abrir2.setEnabled(false);
         abrir2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 abrir2ActionPerformed(evt);
             }
         });
+
+        ruta2.setEnabled(false);
 
         btnGuardarAutos.setText("Guardar");
         btnGuardarAutos.addActionListener(new java.awt.event.ActionListener() {
@@ -79,6 +83,7 @@ public class abrirArchivos extends javax.swing.JFrame {
         });
 
         btnGuardarMotos.setText("Guardar");
+        btnGuardarMotos.setEnabled(false);
         btnGuardarMotos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnGuardarMotosMouseClicked(evt);
@@ -118,11 +123,14 @@ public class abrirArchivos extends javax.swing.JFrame {
         });
 
         btnConMotos.setText("Conexion");
+        btnConMotos.setEnabled(false);
         btnConMotos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnConMotosActionPerformed(evt);
             }
         });
+
+        jLabel8.setText("(MODULO INACTIVO TEMPORALMENTE)");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -151,7 +159,10 @@ public class abrirArchivos extends javax.swing.JFrame {
                             .addComponent(nombre_arch2, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel8))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,7 +173,7 @@ public class abrirArchivos extends javax.swing.JFrame {
                                     .addComponent(btnConAuto))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                     .addComponent(abrir2)
-                                    .addGap(18, 18, 18)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(btnConMotos))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -191,7 +202,8 @@ public class abrirArchivos extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(nombre_arch2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4)
-                            .addComponent(jLabel7))
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(abrir2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -414,6 +426,7 @@ public class abrirArchivos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField nomb_arch1;

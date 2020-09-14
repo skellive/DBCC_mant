@@ -19,10 +19,10 @@ import java.util.logging.Logger;
  */
 public class conexion {
     
-    public String base="0zh7kki8n";
-    public String user ="root";
-    public String password="root";
-    public String url ="jdbc:mysql://localhost:3306/"+ base;
+    public String base="elian_0zh7kki8n";
+    public String user ="elian";
+    public String password="sbpm12072020JPA";
+    public String url ="jdbc:mysql://mysql-elian.alwaysdata.net:3306/"+ base;
     public Connection con = null;
     public Statement sentencia;
     public ResultSet resultado;

@@ -352,23 +352,16 @@
                                       <EmptySpace min="-2" pref="358" max="-2" attributes="0"/>
                                       <Component id="jButton1" min="-2" pref="161" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="btnRegMotos" min="-2" pref="161" max="-2" attributes="0"/>
-                                              <Component id="btnRegCarroceria" min="-2" pref="161" max="-2" attributes="0"/>
-                                              <Component id="btnabrArchiv" min="-2" pref="161" max="-2" attributes="0"/>
-                                              <Component id="btnRegMotor" min="-2" pref="161" max="-2" attributes="0"/>
-                                          </Group>
+                                          <Component id="btnabrArchiv" min="-2" pref="161" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" alignment="1" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="btnRegAutos" min="-2" pref="161" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -387,30 +380,18 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                                  <Component id="btnRegMotos" min="-2" pref="67" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnRegCarroceria" min="-2" pref="69" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
                                   <Component id="btnabrArchiv" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btnRegMotor" min="-2" pref="56" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jLabel5" pref="0" max="32767" attributes="0"/>
+                              <Component id="jLabel5" min="-2" pref="293" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Component id="btnRegAutos" min="-2" pref="46" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Component id="jButton1" min="-2" pref="54" max="-2" attributes="0"/>
                           </Group>
@@ -425,27 +406,6 @@
             <Component class="javax.swing.JButton" name="jButton1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Registro general vehiculo"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="btnRegMotos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Registro motos"/>
-                <Property name="enabled" type="boolean" value="false"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegMotosActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="btnRegCarroceria">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Registro por carroceria"/>
-                <Property name="enabled" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="btnRegMotor">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Registro por motor"/>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btnabrArchiv">
@@ -485,12 +445,6 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Com/man/vista/image/02d44a138596fdf4ae697bf05eaa6285.gif"/>
                 </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="btnRegAutos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Registro autos"/>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
           </SubComponents>
